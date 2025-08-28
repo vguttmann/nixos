@@ -20,7 +20,7 @@
     fish
     fzf
     neovim
-    thefuck
+    pay-respects
   ];
 
   wsl.enable = true;
