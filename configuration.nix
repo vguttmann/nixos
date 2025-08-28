@@ -20,6 +20,7 @@
     fish
     fzf
     neovim
+    thefuck
   ];
 
   wsl.enable = true;
