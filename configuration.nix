@@ -1,7 +1,6 @@
 # Edit this configuration file to define what should be installed on
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
 # NixOS-WSL specific options are documented on the NixOS-WSL repository:
 # https://github.com/nix-community/NixOS-WSL
 
@@ -12,12 +11,12 @@
     # include NixOS-WSL modules
     <nixos-wsl/modules>
     ./git.nix
+    ./fish.nix
   ];
 
   environment.systemPackages = with pkgs; [
     tmux
     python3
-    fish
     fzf
     neovim
     pay-respects
@@ -30,16 +29,6 @@
   networking.proxy.httpsProxy = "http://localhost:3128/";
   networking.proxy.noProxy = "127.0.0.1,localhost";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  users.extraUsers.nixos = {
-    shell = pkgs.fish;
-  };
-
-
-
-
-
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
