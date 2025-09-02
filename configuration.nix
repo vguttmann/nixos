@@ -15,6 +15,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    nvim-pkg
     tmux
     python3
     fzf
