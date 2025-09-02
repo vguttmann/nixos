@@ -19,6 +19,7 @@ programs.zoxide.enableFishIntegration = true;
     shellAliases = {
       rebuild = "sudo nixos-rebuild switch --impure";
       commit = "git commit -p";
+      amend = "git commit -a --amend";
     };
   };
   users.extraUsers.nixos = {
