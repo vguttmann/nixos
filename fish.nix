@@ -16,6 +16,9 @@ programs.zoxide.enableFishIntegration = true;
   programs.fish = {
     enable = true;
     shellInit = "pay-respects fish | source && zoxide init fish | source";
+    shellAliases = {
+      rebuild = "sudo nixos-rebuild switch --impure";
+    };
   };
   users.extraUsers.nixos = {
     shell = pkgs.fish;
