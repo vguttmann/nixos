@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     fish
+    grc
     fishPlugins.grc
     fishPlugins.plugin-git
     fishPlugins.done
