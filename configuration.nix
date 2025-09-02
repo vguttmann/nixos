@@ -19,7 +19,6 @@
     tmux
     python3
     fzf
-    neovim
     pay-respects
   ];
 
