@@ -12,7 +12,7 @@
     <nixos-wsl/modules>
     ./git.nix
     ./fish.nix
-    ./kubectl.nix
+    ./k8s.nix
   ];
 
   environment.systemPackages = with pkgs; [
