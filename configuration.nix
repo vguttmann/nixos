@@ -28,7 +28,7 @@
   programs.fish.enable = true;
   networking.proxy.httpProxy = "http://localhost:3128/";
   networking.proxy.httpsProxy = "http://localhost:3128/";
-  networking.proxy.noProxy = "127.0.0.1,localhost";
+  networking.proxy.noProxy = "127.0.0.1,localhost,edge-poc.bmwgroup.net";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # This value determines the NixOS release from which the default
