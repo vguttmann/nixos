@@ -21,6 +21,7 @@
     python3
     fzf
     pay-respects
+    nix-index
   ];
 
   wsl.enable = true;
