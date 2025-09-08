@@ -3,5 +3,6 @@
     kubectl
     argocd
     helm
+    sops
   ];
 }
