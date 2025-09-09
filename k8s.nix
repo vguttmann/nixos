@@ -2,7 +2,7 @@
   environment.systemPackages = with pkgs; [
     kubectl
     argocd
-    helm
+    kubernetes-helm
     sops
   ];
 }
