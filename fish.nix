@@ -20,6 +20,7 @@ programs.zoxide.enableFishIntegration = true;
       rebuild = "sudo nixos-rebuild switch --impure";
       commit = "git commit -p";
       amend = "git commit -a --amend";
+      sync = "git pull local main && git rebase --root --exec 'git commit --amend --no-edit --reset-author' && git push --force";
     };
   };
   users.extraUsers.nixos = {
