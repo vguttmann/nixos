@@ -7,6 +7,7 @@
     fishPlugins.done
     fishPlugins.fish-you-should-use
     zoxide
+    tree
   ];
   environment.variables = {
     _PR_SHELL = "fish";
