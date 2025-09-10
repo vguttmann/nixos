@@ -4,5 +4,6 @@
     argocd
     kubernetes-helm
     sops
+    age
   ];
 }
